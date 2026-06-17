@@ -1,0 +1,8 @@
+{
+"name":"俺流レシピ帳",
+"short_name":"レシピ帳",
+"display":"standalone",
+"start_url":"./",
+"background_color":"#ffffff",
+"theme_color":"#ffffff"
+}

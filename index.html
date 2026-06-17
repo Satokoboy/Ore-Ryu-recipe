@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>俺流レシピ帳</title>
+<link rel="manifest" href="manifest.json">
+<style>
+body{font-family:sans-serif;margin:0;padding:16px;max-width:700px}
+textarea,input{width:100%;box-sizing:border-box;margin:8px 0;padding:10px}
+button{padding:10px 14px;margin:4px}
+.card{border:1px solid #ccc;padding:10px;margin-top:10px;border-radius:8px}
+</style>
+</head>
+<body>
+<h1>俺流レシピ帳</h1>
+<input id="title" placeholder="料理名">
+<textarea id="raw" rows="8" placeholder="レシピ本文を貼り付け"></textarea>
+<button onclick="parseRecipe()">自動整理</button>
+
+<h3>材料・分量</h3>
+<textarea id="ingredients" rows="6"></textarea>
+
+<h3>工程</h3>
+<textarea id="steps" rows="6"></textarea>
+
+<h3>メモ</h3>
+<textarea id="notes" rows="4"></textarea>
+
+<button onclick="saveRecipe()">保存</button>
+
+<h2>保存済みレシピ</h2>
+<div id="recipes"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
